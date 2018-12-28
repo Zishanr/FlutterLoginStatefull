@@ -12,7 +12,7 @@ class App extends StatelessWidget {
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
-          child: Icon(Icons.add_a_photo),
+          child: Icon(Icons.add_to_home_screen),
         ),
         body: LoginScreen(),
       ),
