@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../minxins/validation_mixin.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -7,8 +8,8 @@ class LoginScreen extends StatefulWidget {
   }
 }
 
-class LoginScreenState extends State<LoginScreen> {
-  final formStateGlobalKey = GlobalKey<FormState>();
+class LoginScreenState extends State<LoginScreen> with ValidationMixin {
+  final GlobalKey<FormState> formStateGlobalKey = GlobalKey<FormState>();
   String emailValue, passwordValue;
 
   @override
@@ -25,6 +26,10 @@ class LoginScreenState extends State<LoginScreen> {
               margin: EdgeInsets.only(top: 15.0),
             ),
             submitButton(),
+            Container(
+              margin: EdgeInsets.only(top: 15.0),
+            ),
+            resetButton(),
           ],
         ),
       ),
@@ -42,15 +47,7 @@ class LoginScreenState extends State<LoginScreen> {
       ),
       keyboardType: TextInputType.emailAddress,
       textInputAction: TextInputAction.next,
-      validator: (String value) {
-        if (value.isEmpty) {
-          return 'Email address cant be null';
-        }
-        if (!value.contains('@')) {
-          return 'Please enter a valid email address';
-        }
-        return null;
-      },
+      validator: emailValidation,
       onSaved: (String value) {
         emailValue = value;
       },
@@ -66,15 +63,7 @@ class LoginScreenState extends State<LoginScreen> {
             fontSize: 20.0,
           ),
           hintText: 'Password'),
-      validator: (String value) {
-        if (value.isEmpty) {
-          return 'Enter valid password';
-        }
-        if (value.length < 4) {
-          return 'Password lenght must be at least 4 characters';
-        }
-        return null;
-      },
+      validator: passwordValidation,
       onSaved: (String value) {
         passwordValue = value;
       },
@@ -96,4 +85,16 @@ class LoginScreenState extends State<LoginScreen> {
       color: Colors.blue,
     );
   }
+
+  Widget resetButton() {
+    return RaisedButton(
+      onPressed: (){
+        formStateGlobalKey.currentState.reset();
+      },
+      textColor: Colors.white,
+      child: Text('Reset'),
+      color: Colors.blue,
+    );
+  }
 }
+
