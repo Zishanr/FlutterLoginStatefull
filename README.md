@@ -18,10 +18,7 @@ For help getting started with Flutter, view the online
 
 ## Demo
 ### Android
-<img src="https://github.com/Zishanr/FlutterLoginStatefull/blob/master/screenshots/android_screenshot.png" width="300" height="500">
-
-### IOS
-<img src="https://github.com/Zishanr/FlutterLoginStatefull/blob/master/screenshots/ios_screenshot.png" width="300" height="500">
+<img src="https://github.com/Zishanr/FlutterLoginStatefull/blob/master/screenshots/Android.gif" width="315" height="600">
 
 ## Dependencies
 
