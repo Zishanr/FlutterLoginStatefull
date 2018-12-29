@@ -1,6 +1,36 @@
-# login_stateful
+# Login Screen UI Statefull Widget
 
-A new Flutter project.
+A Flutter application in which i used Form and Form fields (TextFormField) to make Login Screen UI with validations. Used Mixins class
+to keeps validation methods. User Global key to get reference of Statefull widget.
+
+
+This project is just a start with flutter. In this project i got knowledge about following 
+* What are Widgets
+* Types of widget and when to use which one - Statefull, Stateless.
+* Form Widget & Form Fields - Form Field is statefull widget which provides method to save state of its child form fields.
+* Global Key
+* Different way of styles.
+* Container Widget
+* Mixins
+
+For help getting started with Flutter, view the online
+[documentation](https://flutter.io/).
+
+## Demo
+### Android
+<img src="https://github.com/Zishanr/FlutterLoginStatefull/blob/master/screenshot/android_screenshot.png" width="300" height="500">
+
+### IOS
+<img src="https://github.com/Zishanr/FlutterLoginStatefull/blob/master/screenshot/ios_screenshot.png" width="300" height="500">
+
+## Dependencies
+
+* [Flutter](https://flutter.io/)
+* [Dart HTTP](https://github.com/dart-lang/http)
+* [Dart Async](https://github.com/dart-lang/async)
+
+## MockAPI
+[Jsonplaceholder](https://jsonplaceholder.typicode.com/photos)
 
 ## Getting Started
 
