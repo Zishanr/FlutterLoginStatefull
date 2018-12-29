@@ -17,7 +17,12 @@ For help getting started with Flutter, view the online
 [documentation](https://flutter.io/).
 
 ## Demo
-### Android
+### Android ### IOS
+<p align="center">
+<img src="https://github.com/Zishanr/FlutterLoginStatefull/blob/master/screenshot/android_screenshot.png" width="300" height="500">
+<img src="https://github.com/Zishanr/FlutterLoginStatefull/blob/master/screenshot/ios_screenshot.png" width="300" height="500">
+</p>
+
 <p align="center">
 <img src="https://github.com/Zishanr/FlutterLoginStatefull/blob/master/screenshots/login_statefull.gif" width="315" height="600">
 </p>
