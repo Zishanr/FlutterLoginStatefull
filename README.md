@@ -18,7 +18,7 @@ For help getting started with Flutter, view the online
 
 ## Demo
 ### Android
-<img src="https://github.com/Zishanr/FlutterLoginStatefull/blob/master/screenshots/Android.gif" width="350" height="600">
+<img src="https://github.com/Zishanr/FlutterLoginStatefull/blob/master/screenshots/Android.gif" width="315" height="600">
 
 ## Dependencies
 
